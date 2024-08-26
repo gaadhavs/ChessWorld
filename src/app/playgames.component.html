@@ -1,0 +1,155 @@
+<div class="chess-container">
+  
+  <div class="chess-pieces">
+    <img src="https://th.bing.com/th/id/R.9c7e14fe65c214c95f017a5a6eadd74a?rik=00P58kY5hgshvQ&riu=http%3a%2f%2fimages.chesscomfiles.com%2fuploads%2fimages_users%2ftiny_mce%2fEyechess%2fphpuvfYM6.png&ehk=35n72d0bd2t2quOWJ5tYJRTPHYqTHFj%2bpvd81s%2fWybQ%3d&risl=&pid=ImgRaw&r=0" alt="Chess Pieces" class="chess-pieces">
+  </div>
+  
+  <h2>Play Games</h2>
+  
+  <div class="game-options">
+    <button class="game-button">
+      <i class="fas fa-gamepad"></i> Play Online
+    </button>
+    <button class="game-button" onclick="location.href='./ai';">
+      <i class="fas fa-robot"></i> Play vs AI
+    </button>
+    
+    <button class="game-button">
+      <i class="fas fa-user-friends"></i> Play with a Friend
+    </button>
+    <button class="game-button">
+      <i class="fas fa-trophy"></i> Tournaments
+    </button>
+  </div>
+  
+  <div class="chess-rules">
+    <h2>Chess Rules</h2>
+  
+
+  </div>
+  <div class="container">
+    <h1>What is Chess and What is the Goal?</h1>
+    <p>Chess is a two-player game where each player has a set of 16 chess pieces that can be grouped into:</p>
+    
+    <ol>
+        <li>Pawns (8)</li>
+        <li>Knights (2)</li>
+        <li>Rooks (2)</li>
+        <li>Bishops (2)</li>
+        <li>King (1)</li>
+        <li>Queen (1)</li>
+    </ol>
+
+    <p>A fully set up chess board looks like this:</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/di1-300x300.png" alt="fully set up chess board">
+    </div>
+
+    <p>Each type of piece moves, attacks, or defends in different ways.</p>
+    <p>Your goal is to use those pieces to “checkmate” your opponent; to put it more simply, your goal is to simultaneously threaten (aka “check”) your opponent’s king—with your pieces—and prevent his/her king from escaping (aka “checkmate”).</p>
+
+    <p>One big misconception is that you can capture (or “kill”) the king in a chess game, which is simply untrue. Your goal is solely to trap the King and threaten to capture, not to capture the piece itself.</p>
+    <p>If you can do this, then you have won the game!</p>
+
+    <h2 class="important-number">Rules of Chess #1:</h2>
+    <h2>The Chessboard</h2>
+    <p>A standard chessboard consists of 64 alternating dark and light squares as well as an initial setup of 32 pieces.</p>
+
+    <p>On the outside of the checkered area are letters and numbers as outlined below, where each letter corresponds with a column–known as a “file” in chess–and each number corresponds with a row–known as a “rank” in chess.</p>
+    
+    <p>So in the diagram below:</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/image9-293x300.png" alt="understanding the chessboard">
+    </div>
+
+    <h2 class="important-number">Rules of Chess #2:</h2>
+    <h2>The Chess Pieces</h2>
+    <p>Each piece mentioned also has a capital letter that corresponds to the piece moving. Here is a list of what each piece’s 1-letter abbreviation is:</p>
+    
+    <ol>
+        <li>Bishop (B)</li>
+        <li>Rook (R)</li>
+        <li>Queen (Q)</li>
+        <li>King (K)</li>
+        <li>Pawn (P)</li>
+        <li>Knight (N)</li>
+    </ol>
+
+    <p>Just know that usually players just leave a pawn move as “d4” instead of “Pd4”</p>
+    <p>Also, we use “N” for knight because “K” is already used for king.</p>
+
+    <p>So if a pawn were to move on the “d4” square, we could say either “d4” or “Pd4” as the first move.</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/unnamed-298x300.png" alt="the first move">
+    </div>
+
+    <h2 class="important-number">Rules of Chess #3:</h2>
+    <h2>Setting up Chess Pieces</h2>
+    <p>In setting up the board, let’s use our newfound knowledge to organize what pieces are where on the chessboard:</p>
+    <p>Here are the steps to set up the chessboard:</p>
+    
+    <ol>
+        <li>Place 8 pawns across the 2nd and 7th ranks</li>
+        <li>Place 2 rooks on the a1/a8 and h1/h8 squares</li>
+        <li>Place 2 knights on the b1/b8 and g1/g8 squares</li>
+        <li>Place 2 bishops on the c1/c8 and f1/f8 squares</li>
+        <li>Place the queens on the d1/d8 squares and the kings on the e1 and e8 squares. A good way to remember is that the Queen always goes on the square of her color. So, the White queen is on the light-colored d1 square. The Black queen is on the dark-colored d8 square.</li>
+    </ol>
+
+    <p>Congrats! You successfully set up a chessboard. And you have almost mastered the most important chess rules!</p>
+
+    <h2 class="important-number">Rules of Chess #4:</h2>
+    <h2>How Does Each Piece Move?</h2>
+    
+    <h3>1. Rook</h3>
+    <p>The rook can move to as many non-occupied squares left, right, up, or down.</p>
+    <p>To simplify, think of a “+ sign” when you think about how the rook moves.</p>
+    <p>Additionally, the rook cannot jump over other pieces.</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/image11-300x297.png" alt="the rook">
+    </div>
+
+    <h3>2. Bishop</h3>
+    <p>The bishop can move similarly to any non-occupied square but in the diagonal direction.</p>
+    <p>Here, you can think of the bishop’s movements as an “x”</p>
+    <p>Similarly, like the rook, the bishop cannot jump over other pieces.</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/image10-297x300.png" alt="the bishop">
+    </div>
+
+    <h3>3. Queen</h3>
+    <p>The queen has the power of both the bishop and rook in that it can move in both the + and x direction but cannot jump over other pieces.</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/image8-300x300.png" alt="the queen">
+    </div>
+
+    <h3>4. King</h3>
+    <p>The king is a pretty simple piece in that it can move one square in any direction and cannot jump over other pieces (I think you see a pattern here).</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/image12-300x298.png" alt="the king">
+    </div>
+
+    <h3>5. Knight</h3>
+    <p>Now this is where we break the pattern and this all gets a little tricky. By definition, the knight moves two non-diagonal squares in any direction and then one non-diagonal square in either perpendicular direction (or vice versa).</p>
+    <p>But I think you can agree that is a mouthful!</p>
+    <p>The best way to think about how the knight moves is in an “L shape.” By this, I mean that if you can make an L or backwards L, you can move your knight in that direction.</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/unnamed-3-300x300.png" alt="the knight">
+    </div>
+
+    <h3>6. Pawn</h3>
+    <p>Finally, we get to the pawn. Though this piece may seem simple, it too has its nuances in play.</p>
+    <p>Generally, the pawn moves up 1 rank (1 square up) per move. But in the first move, any pawn can move up 2 ranks (2 squares up).</p>
+    <div class="diagram">
+        <img src="https://thechessworld.com/wp-content/uploads/2020/07/image18-298x300.png" alt="the pawn">
+    </div>
+
+    <h2 class="important-number">Rules of Chess #5:</h2>
+    <h2>Special Captures</h2>
+    <p>Normal Pawn Capture: The White pawn on b3 can capture either of the Black pawns on a4 or c4.</p>
+    <p>En-Passant: In this special move, the White pawn on e5 can capture the pawn on f5 ONLY if the White pawn is on the 5th rank and Black immediately plays a pawn next to the White pawn.</p>
+    <p>Keep in mind that, as a part of the rule, you can only make this capture immediately once your opponent has played into the 5th rank (or 4th if you are Black).</p>
+    <p>If you wait for a move, en-passant cannot occur.</p>
+    <p>Invalid En-Passant: If Black plays into the 5th rank but your pawn is not on the same rank as the Black pawn, then en-passant cannot happen.</p>
+    
+</div>

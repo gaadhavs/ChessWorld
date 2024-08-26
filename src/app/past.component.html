@@ -1,0 +1,38 @@
+<div class="affiliates-container">
+  <h1>Past Tournaments</h1>
+  
+  <div class="search-bar">
+    <input [(ngModel)]="searchTerm" placeholder="Search...">
+    <button (click)="clearSearch()" class="clear-btn">×</button>
+  </div>
+ 
+  <div class="affiliate-list">
+    <div class="affiliate-row" *ngFor="let i of [0, 1, 2, 3, 4]">
+      <div class="affiliate-card">
+        <div class="avatar">
+          <img src="{{ tournaments[i*2].avatar }}" [alt]="tournaments[i*2].name">
+        </div>
+        <div class="info">
+          <h2>{{ tournaments[i*2].name }}</h2>
+          <p class="description"><strong>Date:</strong> {{ tournaments[i*2].date }}</p>
+          <p class="description"><strong>Organization:</strong> {{ tournaments[i*2].organization }}</p>
+          <p class="description"><strong>Location:</strong> {{ tournaments[i*2].location }}</p>
+          <p class="achievements"><strong>Winners:</strong> {{ tournaments[i*2].winners }}</p>
+        </div>
+      </div>
+      <div class="affiliate-card" *ngIf="tournaments[i*2+1]">
+        <div class="avatar">
+          <img src="{{ tournaments[i*2+1].avatar }}" [alt]="tournaments[i*2+1].name">
+        </div>
+        <div class="info">
+          <h2>{{ tournaments[i*2+1].name }}</h2>
+          <p class="description"><strong>Date:</strong> {{ tournaments[i*2+1].date }}</p>
+          <p class="description"><strong>Organization:</strong> {{ tournaments[i*2+1].organization }}</p>
+          <p class="description"><strong>Location:</strong> {{ tournaments[i*2+1].location }}</p>
+          <p class="achievements"><strong>Winners:</strong> {{ tournaments[i*2+1].winners }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+has context menu

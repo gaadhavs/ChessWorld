@@ -1,0 +1,82 @@
+.affiliates-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+ 
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+ 
+:host {
+  display: block;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://w0.peakpx.com/wallpaper/215/665/HD-wallpaper-chess-black-board-king-label-society-zen.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+ 
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+ 
+.clear-btn {
+  padding: 10px 15px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+ 
+.affiliate-list {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.affiliate-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Space between rows */
+}
+ 
+.affiliate-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.678);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: rgb(24, 23, 23);
+  opacity: 1;
+  width: calc(48% - 10px); /* Adjust width to fit two cards in a row */
+  margin-right: 10px; /* Space between cards */
+}
+ 
+.affiliate-card:last-child {
+  margin-right: 0; /* Remove margin for the last card in a row */
+}
+ 
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ 
+.info {
+  flex-grow: 1;
+  margin-left: 20px;
+  color: black;
+}

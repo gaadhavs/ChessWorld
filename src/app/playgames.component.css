@@ -1,0 +1,174 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f0ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.chess-container {
+  position: relative; /* Ensure the container is positioned relative to place the pseudo-element */
+  text-align: left;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(54, 19, 19, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide any overflow to keep the design clean */
+  opacity:0.95;
+}
+
+:host {
+  display: block;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://cdn11.bigcommerce.com/s-oo0gdojvjo/images/stencil/1280x1280/products/11638/21505/antique-chess-gameboard-wrapped-canvas-giclee-art-print-wall-art__75090.1537086998.jpg?c=2&imbypass=on'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.chess-pieces {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 70%;
+}
+
+.chess-piece {
+  font-size: 24px;
+  margin: 0 5px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Cursive', sans-serif;
+  color: #333;
+}
+
+.game-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.game-button {
+  background: linear-gradient(45deg, #f7d65f, #c9b96a33);
+  
+  border-radius: 30px;
+  padding: 30px 55px;
+  color: #1c1c1c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(218, 215, 202, 0.3);
+}
+
+.game-button:hover {
+  background-color: #46586b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(218, 215, 202, 0.3);
+}
+
+
+
+.chess-rules h2 {
+  font-size: 4;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.chess-board {
+  width: 100%;
+  max-width: 1000px; /* Increased size */
+  margin: 0 auto; /* Centers the element horizontally */
+  border-radius: 10px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f0ff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Cursive', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: 'Cursive', sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+.important {
+  font-weight: bold;
+  color: #444;
+}
+
+.important-number {
+  font-weight: bold;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.diagram {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.diagram img {
+  max-width: 80%;
+  height: auto;
+}
+

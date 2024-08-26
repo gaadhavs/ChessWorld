@@ -1,0 +1,17 @@
+<div class="ranking-page">
+  <h1>State Rankings</h1>
+  <select (change)="onStateChange($event)">
+    <option *ngFor="let state of states" [value]="state">{{ state }}</option>
+  </select>
+  <div class="ranking-list">
+    <div *ngFor="let player of players" class="ranking-item">
+      <img src=" https://cdn.pixilart.com/photos/large/14f6356136adf02.jpg " alt="Profile Picture" class="profile-picture">
+      <div class="player-details">
+        <h3>{{ player.name }}</h3>
+        <p>Age: {{ player.age }}</p>
+        <p>Bio: {{ player.bio }}</p>
+      </div>
+      <button class="rank-button">Rank</button>
+    </div>
+  </div>
+</div>

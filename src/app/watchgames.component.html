@@ -1,0 +1,25 @@
+<div class="watch-games-container">
+  <h1>Watch Games</h1>
+  
+  <div class="search-bar">
+    <input [(ngModel)]="searchValue" placeholder="Value">
+    <button (click)="clearSearch()" class="clear-btn">×</button>
+    <button class="refresh-btn">⟳</button>
+  </div>
+  
+  <div class="games-grid">
+    <div *ngFor="let game of games" class="game-card">
+      <div class="game-preview">
+        <img src="https://c.wallhere.com/photos/03/6b/chess_Magnus_Carlsen-1155114.jpg!d" alt="Game Preview" class="game-preview img">
+          <span *ngIf="game.isLive" class="live-badge">LIVE</span>
+          <span *ngIf="!game.isLive" class="time-badge">{{game.time}}</span>
+        </div>
+        <div class="game-info">
+          <p class="game-title">{{game.title}}</p>
+          <p class="game-date">{{game.date}}</p>
+          <li><a href="https://www.youtube.com/watch?v=hrhMxq4k8KE" class="watch-button">Watch Now</a></li>
+  
+        </div>
+      </div>
+    </div>
+  </div>

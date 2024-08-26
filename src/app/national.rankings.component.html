@@ -1,0 +1,28 @@
+<!-- app.component.html -->
+<div class="ranking-page">
+  <h1>National Rankings</h1>
+  <div class="search-bar">
+    <input type="text" placeholder="Value" />
+    <button class="clear-btn">X</button>
+  </div>
+
+  <div class="ranking-list">
+    <div class="ranking-item" *ngFor="let player of players">
+      <div class="profile-picture">
+        <img src="https://cdn.dribbble.com/users/106029/screenshots/1874120/attachments/317128/gruppr-dribbble-mono.png?compress=1&resize=768x576&vertical=top" alt="Profile Picture" />
+      </div>
+      <div class="player-details">
+        <h3>{{ player.name }}</h3>
+        <p>Age: {{ player.age }}</p>
+        <p>Home State: {{ player.homeState }}</p>
+        <p>Bio: {{ player.bio }}</p>
+      </div>
+      <div class="rankings">
+        <button class="rank-button national-rank">National Rank</button>
+        <button class="rank-button ">FIDE Rank</button>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
